@@ -22,16 +22,90 @@
         </div>
     </header>
 
+    <div class="layout">
     <main>
         <section>
             <h2>Bienvenue</h2>
             <p>Ceci est une page d'essai</p>
         </section>
 
-        <section>
+        <section class="articles">
             <h2>Mes Projets</h2>
-            <p>Ajout des contenus</p>
+            
+            <div class="cards">
+                <article class="card">
+                    <img src="images/print.jpg" alt="image">
+                    <div class="card-content">
+                        <h3>Projet 1</h3>
+                        <p>Description</p>
+                        <a href="#" class="btn">Lire plus</a>
+                    </div>
+                </article>
+
+                 <article class="card">
+                    <img src="images/mediit.jpg" alt="image">
+                    <div class="card-content">
+                        <h3>Projet 2</h3>
+                        <p>Description</p>
+                        <a href="#" class="btn">Lire plus</a>
+                    </div>
+                </article>
+
+                 <article class="card">
+                    <img src="images/emoving.jpg" alt="image">
+                    <div class="card-content">
+                        <h3>Projet 3</h3>
+                        <p>Description</p>
+                        <a href="#" class="btn">Lire plus</a>
+                    </div>
+                </article>
+            </div>
         </section>
+
+        <h4>Formulaire d'inscription</h4>
+
+        <form action="#" method="post">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+            <br><br>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password">
+            <br><br>
+
+            <fieldset>
+                <legend>Genre :</legend>
+
+                <input type="radio" id="homme" name="genre" value="homme">
+                <label for="homme">Homme</label>
+
+                <input type="radio" id="femme" name="genre" value="femme">
+                <label for="femme">Femme</label>
+            </fieldset>
+            <br>
+
+            <label for="pays">Pays :</label>
+            <select name="pays" id="pays">
+                <option value="">--Choisir--</option>
+                <option value="france">France</option>
+                <option value="maroc">Maroc</option>
+                <option value="canada">Canada</option>
+            </select>
+            <br><br>
+
+            <label for="message">Message :</label><br>
+            <textarea id="message" name="message" rows="4" cols="30"></textarea>
+            <br><br>
+
+            <input type="checkbox" id="conditions" name="conditions">
+            <label for="conditions">J'accepte les conditions</label>
+
+            <button type="submit">Envoyer</button>
+        </form>
     </main>
 
     <aside>
@@ -57,58 +131,15 @@
                 </tr>
                 <tr>
                     <th scope="row">Sarah</th>
-                    <td>25</th>
+                    <td>25</td>
                     <td>Design</td>    
                 </tr>
             </tbody>
         </table>
     </aside>
 
-    <h4>Formulaire d'inscription</h4>
-
-    <form action="#" method="post">
-        <label for="nom">Nom :</label>
-        <input type="text" id="nom" name="nom" required>
-        <br><br>
-
-        <label for="email">Email :</label>
-        <input type="email" id="email" name="email" required>
-        <br><br>
-
-        <label for="password">Mot de passe :</label>
-        <input type="password" id="password" name="password">
-        <br><br>
-
-        <fieldset>
-            <legend>Genre :</legend>
-
-            <input type="radio" id="homme" name="genre" value="homme">
-            <label for="homme">Homme</label>
-
-            <input type="radio" id="femme" name="genre" value="femme">
-            <label for="femme">Femme</label>
-        </fieldset>
-        <br>
-
-        <label for="pays">Pays :</label>
-        <select name="pays" id="pays">
-            <option value="">--Choisir--</option>
-            <option value="france">France</option>
-            <option value="maroc">Maroc</option>
-            <option value="canada">Canada</option>
-        </select>
-        <br><br>
-
-        <label for="message">Message :</label><br>
-        <textarea id="message" name="message" rows="4" cols="30"></textarea>
-        <br><br>
-
-        <input type="checkbox" id="conditions" name="conditions">
-        <label for="conditions">J'accepte les conditions</label>
-
-        <button type="submit">Envoyer</button>
-    </form>
-
+    
+    </div>
     
 
     <footer>
